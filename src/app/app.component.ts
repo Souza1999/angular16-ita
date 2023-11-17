@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pedido } from 'src/shared/model/pedido';
+import { Pedido } from 'src/app/shared/model/pedido';
 
 @Component({
   selector: 'app-root',
