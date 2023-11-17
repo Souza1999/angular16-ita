@@ -1,13 +1,23 @@
 <h2>{{titulozinho}} - {{descricao}} </h2>
 
-<mat-form-field>
+<mat-form-field appearance="fill">
   <mat-label>ID</mat-label>
-  <input matInput [(ngModel)] = "pedido.id">
+  <input matInput [(ngModel)] = "pedido.id" placeholder="ID do pedido">
 </mat-form-field>
-  Nome: <input [(ngModel)] = "pedido.nome"> <br>
-  Descrição: <input [(ngModel)] = "pedido.descricao"> <br><br>
 
-<button (click)="enviarPedido()">Enviar pedido</button> <br><br>
+<mat-form-field>
+  <mat-label>Nome</mat-label>
+  <input matInput [(ngModel)] = "pedido.nome" placeholder="Nome do cliente">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Descrição</mat-label>
+  <input matInput [(ngModel)] = "pedido.descricao" placeholder="Descrição do pedido">
+</mat-form-field>
+
+<br>
+<button (click)="enviarPedido()">Enviar pedido</button> 
+<br><br>
 
 <ul>
   <li *ngFor="let pedido of pedidos">{{pedido.id}} - {{pedido.descricao}}</li>
