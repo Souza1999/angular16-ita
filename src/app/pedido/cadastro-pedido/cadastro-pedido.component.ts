@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Pedido} from 'src/app/shared/model/pedido'; //tive que importar isso aqui porque continuava com o erro, mas o professor não mostrou isso no vídeo
 
 @Component({
   selector: 'app-cadastro-pedido',
@@ -6,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro-pedido.component.scss']
 })
 export class CadastroPedidoComponent implements OnInit {
-  constructor() { }
+  
+  pedido: Pedido;
+  pedidos: Array<Pedido>;
+
+  constructor(){
+    this.pedido = new Pedido();
+    this.pedidos = new Array<Pedido>();
+  }
 
   ngOnInit(): void {
     
   }
+
+  enviarPedido(): void {
+    this.pedidos.push(this.pedido);
+    console.log("Enviado com sucesso!")
+    this.pedido = new Pedido();
+  }
 }
+

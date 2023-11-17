@@ -1,31 +1,5 @@
-<h2>{{titulozinho}} - {{descricao}} </h2>
+<h2>{{titulozinho}} - {{descricaozinha}} </h2>
 
 <!-- Testando a aparição do componente cadastro-pedido -->
 <app-cadastro-pedido></app-cadastro-pedido>
-
-<mat-form-field appearance="fill">
-  <mat-label>ID</mat-label>
-  <input matInput [(ngModel)] = "pedido.id" placeholder="ID do pedido">
-</mat-form-field>
-
-<mat-form-field>
-  <mat-label>Nome</mat-label>
-  <input matInput [(ngModel)] = "pedido.nome" placeholder="Nome do cliente">
-</mat-form-field>
-
-<mat-form-field>
-  <mat-label>Descrição</mat-label>
-  <input matInput [(ngModel)] = "pedido.descricao" placeholder="Descrição do pedido">
-</mat-form-field>
-
-<button mat-icon-button color="primary" (click)="enviarPedido()">
-  <mat-icon>send</mat-icon>
-</button> 
-<br><br>
-
-<mat-card *ngFor="let pedido of pedidos" class="mat-card-simplezinho">
-  <mat-card-header>
-    <mat-card-title> {{pedido.id}} - {{pedido.nome}} </mat-card-title>
-  </mat-card-header>
-  <mat-card-content> {{pedido.descricao}} </mat-card-content>
-</mat-card>
+<br>
