@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PEDIDOS } from 'src/app/shared/model/PEDIDOS';
 import {Pedido} from 'src/app/shared/model/pedido'; //tive que importar isso aqui porque continuava com o erro, mas o professor não mostrou isso no vídeo
 
 @Component({
@@ -13,7 +14,8 @@ export class CadastroPedidoComponent implements OnInit {
 
   constructor(){
     this.pedido = new Pedido();
-    this.pedidos = new Array<Pedido>();
+    //this.pedidos = new Array<Pedido>();
+    this.pedidos = PEDIDOS;
   }
 
   ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PEDIDOS } from 'src/app/shared/model/PEDIDOS';
 
 @Component({
   selector: 'app-listagem-pedido',
@@ -6,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listagem-pedido.component.scss']
 })
 export class ListagemPedidoComponent implements OnInit {
-  pedidos = [
-    {id: 1, nome: 'Adriano', descricao: '1 kg'},
-    {id: 2, nome: 'Bianca', descricao: '2 kg'},
-  ];
+
+  pedidos = PEDIDOS;
   
   constructor() {}
 
