@@ -8,6 +8,11 @@ import { CadastroPedidoComponent } from './cadastro-pedido/cadastro-pedido.compo
   declarations: [
     CadastroPedidoComponent
   ],
+
+  exports: [
+    CadastroPedidoComponent
+  ],
+
   imports: [
     CommonModule
   ]

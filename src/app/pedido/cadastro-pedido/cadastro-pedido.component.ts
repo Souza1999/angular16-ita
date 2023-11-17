@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro-pedido.component.scss']
 })
 export class CadastroPedidoComponent implements OnInit {
-  constructor() {
-
-  }
+  constructor() { }
 
   ngOnInit(): void {
     
