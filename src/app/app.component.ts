@@ -9,15 +9,17 @@ import { Pedido } from 'src/shared/model/pedido';
 export class AppComponent {
   titulozinho = 'I Take Away';
   descricao = 'Faça seu pedido!';
-  pedido_teste: Pedido;
+  pedido: Pedido;
   pedidos: Array<Pedido>;
 
   constructor(){
-    this.pedido_teste = new Pedido();
+    this.pedido = new Pedido();
     this.pedidos = new Array<Pedido>();
   }
 
   enviarPedido(): void {
+    this.pedidos.push(this.pedido);
     console.log("Enviado com sucesso!")
+    this.pedido = new Pedido();
   }
 }
