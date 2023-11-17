@@ -15,10 +15,12 @@
   <input matInput [(ngModel)] = "pedido.descricao" placeholder="Descrição do pedido">
 </mat-form-field>
 
-<br>
-<button mat-raised-button color="warn" (click)="enviarPedido()">Enviar pedido</button> 
+<button mat-icon-button color="primary" (click)="enviarPedido()">
+  <mat-icon>send</mat-icon>
+</button> 
 <br><br>
 
-<ul>
-  <li *ngFor="let pedido of pedidos">{{pedido.id}} - {{pedido.descricao}}</li>
-</ul>
+<mat-card>Teste</mat-card>
+  <ul>
+    <li *ngFor="let pedido of pedidos">{{pedido.id}} - {{pedido.descricao}}</li>
+  </ul>
