@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule // tive que colocar o formsmodule para que o ngModel lá no html funcionasse
+    FormsModule // Tive que colocar o formsmodule para que o ngModel lá no html funcionasse
   ],
   providers: [],
   bootstrap: [AppComponent]
