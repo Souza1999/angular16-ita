@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { PedidoModule } from './pedido/pedido.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    PedidoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
