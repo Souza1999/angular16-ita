@@ -3,9 +3,14 @@
 Olá, Mundo!
 <br>
 
-<h3>Pedido teste:</h3>
-<p>ID do pedido: {{pedido_teste.id}} </p>
-<p>Descrição: {{pedido_teste.descricao}} </p>
-<br>
+ID: <input [(ngModel)] = pedido_teste.id>
+Descrição: <input [(ngModel)] = pedido_teste.descricao>
 
-<button (click)="enviarPedido()">Enviar</button>
+<!-- Event bind -->
+<button (click)="enviarPedido()">Enviar pedido</button>
+<br><br>
+<!-- Prevent bind -->
+<input [value]="pedido_teste.id">
+<!-- Two way data bind -->
+<input [(ngModel)]="pedido_teste.descricao">
+<br>

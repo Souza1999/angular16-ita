@@ -10,9 +10,11 @@ export class AppComponent {
   titulozinho = 'I Take Away';
   descricao = 'Faça seu pedido!';
   pedido_teste: Pedido;
+  pedidos: Array<Pedido>;
 
   constructor(){
     this.pedido_teste = new Pedido();
+    this.pedidos = new Array<Pedido>();
   }
 
   enviarPedido(): void {
