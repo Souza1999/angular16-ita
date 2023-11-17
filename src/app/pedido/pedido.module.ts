@@ -20,7 +20,8 @@ import { ListagemPedidoComponent } from './listagem-pedido/listagem-pedido.compo
   ],
 
   exports: [
-    CadastroPedidoComponent
+    CadastroPedidoComponent,
+    ListagemPedidoComponent, // tem que exportar aqui manualmente, porque não tá funcionando o automático
   ],
 
   imports: [
