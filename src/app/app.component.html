@@ -1,8 +1,11 @@
 <h2>{{titulozinho}} - {{descricao}} </h2>
 
-ID: <input [(ngModel)] = pedido.id> <br>
-Nome: <input [(ngModel)] = pedido.nome> <br>
-Descrição: <input [(ngModel)] = pedido.descricao> <br><br>
+<mat-form-field>
+  <mat-label>ID</mat-label>
+  <input matInput [(ngModel)] = "pedido.id">
+</mat-form-field>
+  Nome: <input [(ngModel)] = "pedido.nome"> <br>
+  Descrição: <input [(ngModel)] = "pedido.descricao"> <br><br>
 
 <button (click)="enviarPedido()">Enviar pedido</button> <br><br>
 
