@@ -9,4 +9,9 @@ export const PEDIDOS = [
         nome: 'Beatriz',
         descricao: '200g de picanha (mal)',
     },
+    {
+        id: 3,
+        nome: 'Carlos',
+        descricao: '3 porções de salpicão',
+    },
 ];
