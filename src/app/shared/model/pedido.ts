@@ -1,5 +1,5 @@
 export class Pedido {
-    id: number = 0;
+    id!: number;
     nome: string = '';
     descricao: string = '';
 }
