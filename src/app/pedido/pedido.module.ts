@@ -11,6 +11,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { ListagemPedidoComponent } from './listagem-pedido/listagem-pedido.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+
+
 
 
 @NgModule({
@@ -35,6 +38,7 @@ import { ListagemPedidoComponent } from './listagem-pedido/listagem-pedido.compo
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    MatGridListModule,      // o FlexLayoutModule está obsoleto, então resolvi fazer esse.
   ]
 })
 export class PedidoModule { }
