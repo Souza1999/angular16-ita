@@ -1,6 +1,8 @@
 .mat-card-simplezinho {
+    display: inline-block;
     background-color: lightgrey;
-    margin: 15px;
+    max-width: 300px;
+    margin: 10px;
 }
 
 .container {
@@ -11,6 +13,12 @@
 }
 
 /*
-    1) depois de muito lutar, o angular material tá instalado nas dependências. vamos testar agora
+    Infelizmente, não posso mais depender do Bard para me ajudar com código, porque ele simplesmente
+    não sabia. 
+
+    Fiquei umas 2 horas com ele me dando inúmeras dicas do que fazer, sendo que o problema era apenas 
+    colocar o display como inline-block.
+
+    Enfim, qualquer alteração nos cards eu faço neste arquivo.
 
 */
