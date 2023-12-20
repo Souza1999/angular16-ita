@@ -10,10 +10,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { PedidoModule } from './pedido/pedido.module';
-
 // Rotas
 import { Router, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+//Layout
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     PedidoModule,
     RouterModule,
     AppRoutingModule,
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
