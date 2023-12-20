@@ -7,7 +7,7 @@ import { ListagemPedidoComponent } from "./pedido/listagem-pedido/listagem-pedid
 
 const routes: Routes = [
   {
-    path: 'cadastro-pedido',
+    path: 'cadastro-pedido', // Esse path aqui é o que vai na URL, que inclusive posso inserir diretamente lá.
     component: CadastroPedidoComponent
   },
   {
