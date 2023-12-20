@@ -11,7 +11,7 @@ const routes: Routes = [
     component: CadastroPedidoComponent
   },
   {
-    path: 'lista-pedido/:id',
+    path: 'listagem-pedido',
     component: ListagemPedidoComponent
   },
 
