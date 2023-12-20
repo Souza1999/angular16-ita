@@ -29,10 +29,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 
   imports: [
     BrowserAnimationsModule,
-    CommonModule,
-    BrowserModule,
+    CommonModule,         // removi o BrowserModule, pois ele já está no app.module e de acordo com o Bard, essa redundância pode gerar conflito.
     FormsModule,
-    BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,

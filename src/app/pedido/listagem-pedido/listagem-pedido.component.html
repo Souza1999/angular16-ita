@@ -1,5 +1,5 @@
 <div class="container">
-  <mat-grid-list rowHeight="100px">
+  <mat-grid-list columnWidth="auto" rowHeight="auto" columns="3" alignItems="center" justifyContent="center">
     <mat-card *ngFor="let pedido of pedidos" class="mat-card-simplezinho">
         <mat-card-header>
           <mat-card-title> {{pedido.id}} - {{pedido.nome}} </mat-card-title>
