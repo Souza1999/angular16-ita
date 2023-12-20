@@ -21,4 +21,13 @@ export class ListagemPedidoComponent implements OnInit {
   editar(pedido: Pedido): void{
     pedido.nome += " Alterado";
   }
+
+  remover(pedido: Pedido): void{
+    // Poderia fazer com o nome também, mas depois faço isso.
+    const indxPedidoARemover = this.pedidos.findIndex(p => p.id === pedido.id)
+    
+    if (indxPedidoARemover > -1){
+      this.pedidos.splice(indxPedidoARemover, 1); //Isso ficou meio estranho, mas nas férias vejo como melhorar.
+    }
+  }
 }
