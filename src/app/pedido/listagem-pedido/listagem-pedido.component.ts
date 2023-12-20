@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PEDIDOS } from 'src/app/shared/model/PEDIDOS';
+import { Pedido } from 'src/app/shared/model/pedido';
 
 @Component({
   selector: 'app-listagem-pedido',
@@ -14,5 +15,10 @@ export class ListagemPedidoComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  // Descobri que o import automático é ctrl + .
+  editar(pedido: Pedido): void{
+    pedido.nome += " Alterado";
   }
 }
