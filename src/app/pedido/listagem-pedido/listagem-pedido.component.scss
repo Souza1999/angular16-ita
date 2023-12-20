@@ -1,5 +1,11 @@
 .mat-card-simplezinho {
     background-color: lightgrey;
-    max-width: 300px;
     margin: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }

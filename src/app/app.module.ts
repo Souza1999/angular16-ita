@@ -14,7 +14,6 @@ import { PedidoModule } from './pedido/pedido.module';
 import { Router, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 //Layout
-import { LayoutModule } from './layout/layout.module';
 import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
@@ -33,7 +32,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
     PedidoModule,
     RouterModule,
     AppRoutingModule,
-    LayoutModule,
     MatGridListModule,  // Fiquei apanhando nisso, igual da vez que fiz na sala e o professor veio me ajudar, mas ele também demorou pra entender. Ou seja, tenho que  ficar mais atento a isso.
   ],
   providers: [],
