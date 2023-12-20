@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { PedidoModule } from './pedido/pedido.module';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PedidoModule } from './pedido/pedido.module';
     MatIconModule,
     MatCardModule,
     PedidoModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
