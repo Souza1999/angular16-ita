@@ -1,5 +1,5 @@
-<input [value]="titulo">
-<input #inputTitulo><button (click)="alterarTitulo(inputTitulo.value)">Alterar</button>
+<input [(ngModel)]="titulo">
+<input [(ngModel)]="titulo">
 
 <div class="container">
   <mat-grid-list cols="4" rowHeight="100px">
