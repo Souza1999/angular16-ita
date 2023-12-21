@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
-
+  nome_fantasia = 'I Take Away';
+  slogan = 'Faça seu pedido!';
 }
