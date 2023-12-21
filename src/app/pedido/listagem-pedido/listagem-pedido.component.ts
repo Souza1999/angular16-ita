@@ -31,12 +31,15 @@ export class ListagemPedidoComponent implements OnInit {
   }
 
   remover(pedido: Pedido): void{
-    // Poderia fazer com o nome também, mas depois faço isso.
-    const indxPedidoARemover = this.pedidos.findIndex(p => p.id === pedido.id)
+    this.pedidoService.remover(pedido.id).subscribe(
+      resposta => {
+        const indxPedidoARemover = this.pedidos.findIndex(p => p.id === pedido.id)      // Poderia fazer com o nome também, mas depois faço isso.
+        if (indxPedidoARemover > -1){
+          this.pedidos.splice(indxPedidoARemover, 1);                                   //Isso ficou meio estranho, mas nas férias vejo como melhorar.
+        }
+      }
+    );
     
-    if (indxPedidoARemover > -1){
-      this.pedidos.splice(indxPedidoARemover, 1); //Isso ficou meio estranho, mas nas férias vejo como melhorar.
-    }
   }
 
   // Com o two-way data bind, este método abaixo não é mais necessário

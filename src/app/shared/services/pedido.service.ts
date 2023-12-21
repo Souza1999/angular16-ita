@@ -22,4 +22,8 @@ export class PedidoService {
   inserir(pedido: Pedido): Observable<Pedido>{
     return this.httpCLient.post<Pedido>(this.URL_PEDIDOS, pedido);
   }
+
+  remover(id: number): Observable<object> {
+    return this.httpCLient.delete(`${this.URL_PEDIDOS}/${id}`);
+  }
 }

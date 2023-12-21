@@ -1,11 +1,6 @@
 {
   "pedidos": [
     {
-      "id": 1,
-      "nome": "Adriana",
-      "descricao": "100g de maminha (mal passada)"
-    },
-    {
       "id": 2,
       "nome": "Bianca",
       "descricao": "200g de picanha (mal passada)"
@@ -13,7 +8,7 @@
     {
       "id": "3",
       "nome": "Carlos",
-      "descricao": "3 porções de salpicão"
+      "descricao": "Carne de besouro ao ponto"
     }
   ],
   "pagamentos": []
