@@ -11,14 +11,16 @@ export class ListagemPedidoComponent implements OnInit {
 
   pedidos: Array<Pedido> = [];  // É o seguinte, o professor deixou passar esse erro, mas pesquisei e vi que basta colocar esses colchetes. Então ficar atento se isso pode dar problema.
   
+  // O código do professor tá só usuarios: Array<Usuario>; Não sei como ele conseguiu.
+
   titulo = "Listagem de Pedidos";
   
   constructor(private pedidoService: PedidoService) {
     
   }
   
+  // O ngOnInit serve para eu colocar dentro dele os próximos passos depois que tudo já estiver criado
   ngOnInit(): void {
-    // O ngOnInit serve para eu colocar dentro dele os próximos passos depois que tudo já estiver criado
     this.pedidoService.listar().subscribe(pedidos => this.pedidos = pedidos);
   }
 
