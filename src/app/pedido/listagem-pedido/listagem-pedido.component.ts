@@ -33,6 +33,7 @@ export class ListagemPedidoComponent implements OnInit {
     }
   }
 
+  // Com o two-way data bind, este método abaixo não é mais necessário
   alterarTitulo(novoTitulo: string): void{
     this.titulo = novoTitulo;
   }
