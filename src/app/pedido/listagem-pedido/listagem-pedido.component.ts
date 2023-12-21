@@ -10,6 +10,8 @@ import { Pedido } from 'src/app/shared/model/pedido';
 export class ListagemPedidoComponent implements OnInit {
 
   pedidos = PEDIDOS;
+
+  titulo = "Listagem de Pedidos";
   
   constructor() {}
 
