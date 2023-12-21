@@ -13,8 +13,10 @@ import { PedidoModule } from './pedido/pedido.module';
 // Rotas
 import { Router, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-//Layout
+// Layout
 import { MatGridListModule } from '@angular/material/grid-list';
+// Menu
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     RouterModule,
     AppRoutingModule,
     MatGridListModule,  // Fiquei apanhando nisso, igual da vez que fiz na sala e o professor veio me ajudar, mas ele também demorou pra entender. Ou seja, tenho que  ficar mais atento a isso.
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
