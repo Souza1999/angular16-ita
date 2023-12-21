@@ -12,6 +12,7 @@ export class ListagemPedidoComponent implements OnInit {
   pedidos: Array<Pedido> = [];  // É o seguinte, o professor deixou passar esse erro, mas pesquisei e vi que basta colocar esses colchetes. Então ficar atento se isso pode dar problema.
   
   // O código do professor tá só usuarios: Array<Usuario>; Não sei como ele conseguiu.
+  // Coloquei pedidos!: Pedido[]; mas o erro de conexão ainda continuou.
 
   titulo = "Listagem de Pedidos";
   
