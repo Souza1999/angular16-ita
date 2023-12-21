@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatGridListModule } from '@angular/material/grid-list';
 // Menu
 import { LayoutModule } from './layout/layout.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { LayoutModule } from './layout/layout.module';
     AppRoutingModule,
     MatGridListModule,  // Fiquei apanhando nisso, igual da vez que fiz na sala e o professor veio me ajudar, mas ele também demorou pra entender. Ou seja, tenho que  ficar mais atento a isso.
     LayoutModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

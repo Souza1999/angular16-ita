@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PEDIDOS } from 'src/app/shared/model/PEDIDOS';
 import {Pedido} from 'src/app/shared/model/pedido'; //tive que importar isso aqui porque continuava com o erro, mas o professor não mostrou isso no vídeo
+import { PedidoService } from 'src/app/shared/services/pedido.service';
 
 @Component({
   selector: 'app-cadastro-pedido',
@@ -10,20 +10,17 @@ import {Pedido} from 'src/app/shared/model/pedido'; //tive que importar isso aqu
 export class CadastroPedidoComponent implements OnInit {
   
   pedido: Pedido;
-  pedidos: Array<Pedido>;
 
-  constructor(){
+  constructor(private pedidoService: PedidoService){
     this.pedido = new Pedido();
-    //this.pedidos = new Array<Pedido>();
-    this.pedidos = PEDIDOS;
   }
 
   ngOnInit(): void {
     
   }
 
-  enviarPedido(): void {
-    this.pedidos.push(this.pedido);
+  inserirPedido(): void {
+    this.pedidoService.inserir(this.pedido).subscribe(p => console.log(`O pedido ${p} foi cadastrado!!!`));
     console.log("Enviado com sucesso!")
     this.pedido = new Pedido();
   }

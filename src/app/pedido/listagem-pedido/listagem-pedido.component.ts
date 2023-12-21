@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PEDIDOS } from 'src/app/shared/model/PEDIDOS';
 import { Pedido } from 'src/app/shared/model/pedido';
+import { PedidoService } from 'src/app/shared/services/pedido.service';
 
 @Component({
   selector: 'app-listagem-pedido',
@@ -9,14 +9,17 @@ import { Pedido } from 'src/app/shared/model/pedido';
 })
 export class ListagemPedidoComponent implements OnInit {
 
-  pedidos = PEDIDOS;
+  pedidos: Array<Pedido> = [];  // É o seguinte, o professor deixou passar esse erro, mas pesquisei e vi que basta colocar esses colchetes. Então espero que dê certo.
 
   titulo = "Listagem de Pedidos";
   
-  constructor() {}
-
-  ngOnInit(): void {
+  constructor(private pedidoService: PedidoService) {
     
+  }
+  
+  ngOnInit(): void {
+    // O ngOnInit serve para eu colocar dentro dele os próximos passos depois que tudo já estiver criado
+    this.pedidoService.listar().subscribe(pedidos => this.pedidos = pedidos);
   }
 
   // Descobri que o import automático é ctrl + .
