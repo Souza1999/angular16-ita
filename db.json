@@ -1,19 +1,20 @@
 {
-  "posts": [
+  "pedidos": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nome": "Adriana",
+      "descricao": "100g de maminha (mal passada)"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "nome": "Bianca",
+      "descricao": "200g de picanha (mal passada)"
+    },
+    {
+      "id": "3",
+      "nome": "Carlos",
+      "descricao": "ccccccccccccc"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "pagamentos": []
 }
