@@ -20,8 +20,7 @@ export class CadastroPedidoComponent implements OnInit {
   }
 
   inserirPedido(): void {
-    this.pedidoService.inserir(this.pedido).subscribe(p => console.log(`O pedido ${p} foi cadastrado!!!`));
-    console.log("Enviado com sucesso!")
+    this.pedidoService.inserir(this.pedido).subscribe(pedido => console.log(pedido));
     this.pedido = new Pedido();
   }
 }
