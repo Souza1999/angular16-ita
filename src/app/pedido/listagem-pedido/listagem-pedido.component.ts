@@ -32,4 +32,8 @@ export class ListagemPedidoComponent implements OnInit {
       this.pedidos.splice(indxPedidoARemover, 1); //Isso ficou meio estranho, mas nas férias vejo como melhorar.
     }
   }
+
+  alterarTitulo(novoTitulo: string): void{
+    this.titulo = novoTitulo;
+  }
 }
