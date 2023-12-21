@@ -10,7 +10,7 @@ import { PedidoService } from 'src/app/shared/services/pedido.service';
 export class ListagemPedidoComponent implements OnInit {
 
   pedidos: Array<Pedido> = [];  // É o seguinte, o professor deixou passar esse erro, mas pesquisei e vi que basta colocar esses colchetes. Então ficar atento se isso pode dar problema.
-
+  
   titulo = "Listagem de Pedidos";
   
   constructor(private pedidoService: PedidoService) {
